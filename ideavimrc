@@ -10,6 +10,9 @@ set relativenumber
 set scrolloff=3
 set history=100000
 set clipboard=unnamed
+set clipboard+=ideaput
+
+set ideajoin
 
 set keep-english-in-normal-and-restore-in-insert
 
