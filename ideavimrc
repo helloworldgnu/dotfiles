@@ -11,6 +11,11 @@ set scrolloff=3
 set history=100000
 set clipboard=unnamed
 
+set keep-english-in-normal-and-restore-in-insert
+
+set surround
+set easymotion
+
 " clear the highlighted search result
 nnoremap <Leader>sc :nohlsearch<CR>
 
@@ -94,14 +99,14 @@ nnoremap / :action Find<CR>
 " but preserve ideavim search
 nnoremap <Leader>/ /
 
-nnoremap <Leader>;; :action CommentByLineComment<CR>
-
 nnoremap <Leader>bb :action ToggleLineBreakpoint<CR>
 nnoremap <Leader>br :action ViewBreakpoints<CR>
 
 nnoremap <Leader>cv :action ChangeView<CR>
 
 nnoremap <Leader>cd :action ChooseDebugConfiguration<CR>
+
+nnoremap <Leader>cl :action CommentByLineComment<CR>
 
 "nnoremap ga :action GotoAction<CR>
 "nnoremap gc :action GotoClass<CR>
@@ -119,6 +124,7 @@ nnoremap <Leader>gs :action GotoSymbol<CR>
 nnoremap <Leader>gt :action GotoTest<CR>
 
 nnoremap <Leader>fp :action ShowFilePath<CR>
+nnoremap <Leader>fc :action ReformatCode<CR>
 
 nnoremap <Leader>ic :action InspectCode<CR>
 
@@ -132,8 +138,8 @@ nnoremap <Leader>rc :action RunToCursor<CR>
 nnoremap <Leader>rC :action ChooseRunConfiguration<CR>
 nnoremap <Leader>re :action RenameElement<CR>
 nnoremap <Leader>rf :action RenameFile<CR>
-
 nnoremap <Leader>rr :action Rerun<CR>
+nnoremap <Leader>rp :action Replace<CR>
 
 nnoremap <Leader>se :action SearchEverywhere<CR>
 nnoremap <Leader>su :action ShowUsages<CR>
