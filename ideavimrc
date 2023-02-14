@@ -102,8 +102,8 @@ nnoremap / :action Find<CR>
 " but preserve ideavim search
 nnoremap <Leader>/ /
 
-nnoremap <Leader>bb :action ToggleLineBreakpoint<CR>
-nnoremap <Leader>br :action ViewBreakpoints<CR>
+nnoremap <Leader>bt :action ToggleLineBreakpoint<CR>
+nnoremap <Leader>bv :action ViewBreakpoints<CR>
 
 nnoremap <Leader>cv :action ChangeView<CR>
 
